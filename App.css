@@ -1,0 +1,38 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+.editor{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
+@media screen and (max-width:600px) {
+  .editor{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.342);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
